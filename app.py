@@ -26,11 +26,13 @@ with st.chat_message("user"):
 stream = client.chat.completions.create(
         model="gpt-4o-mini",  
         messages=[
-            {"role": "system", "content": "You are an assistant."},
-            {"role": "user", "content": prompt}
+            {"role": "system", "content": "You are a government assistant."},
+            {"role": "user", "content": "Hola asistente, quiero saber cosas"},
+            {"role": "assistant", "content": "Hola estimado usuario, puedo responder todas tus preguntas gracias a la inteligencia artificial"},
+            {"role": "user", "content": prompt},
         ],
         max_tokens=800,
-        temperature=0,
+        temperature=0.7,
     )
 respuesta = stream.choices[0].message.content
 with st.chat_message("assistant"):
