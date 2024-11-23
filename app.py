@@ -6,7 +6,7 @@ st.balloons()
 st.title("💬 mi appsistente")
 st.write(
    "Este es un asistente virtual basado en OpenAI's GPT-3.5. "
-   "¿Hay algo en lo que pueda ayudarte hoy? :) "
+   "¿Hay algo en lo que pueda ayudarte hoy? :smile "
    #"To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
    #"You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
 )
